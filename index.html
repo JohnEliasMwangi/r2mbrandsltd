@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R2M Brands | Predict. Execute. Win.</title>
+    <meta name="description" content="Kenya's premier route-to-market agency - Last-mile distribution excellence">
+    
+    <link rel="icon" type="image/png" href="logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles-enhanced.css">
+</head>
+<body class="font-sans antialiased">
+
+<!-- Preloader -->
+<div id="preloader" class="fixed inset-0 z-50 flex items-center justify-center bg-gradient-to-br from-teal-600 to-gray-900">
+    <div class="text-center">
+        <img src="logo.png" alt="R2M Brands" class="w-48 mb-4 animate-pulse">
+        <div class="w-16 h-16 border-4 border-white/30 border-t-white rounded-full animate-spin mx-auto"></div>
+    </div>
+</div>
+
+<!-- Navigation -->
+<nav id="navbar" class="fixed w-full z-40 transition-all duration-500">
+    <div class="absolute inset-0 bg-white/90 backdrop-blur-xl"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            <a href="#home" class="flex items-center">
+                <img src="logo.png" alt="R2M Brands" class="h-12 w-auto">
+            </a>
+            
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="#home" class="text-teal-600 font-semibold">Home</a>
+                <a href="#about" class="text-gray-700 hover:text-teal-600 transition">About</a>
+                <a href="#services" class="text-gray-700 hover:text-teal-600 transition">Services</a>
+                <a href="#approach" class="text-gray-700 hover:text-teal-600 transition">Approach</a>
+                <a href="#contact" class="px-6 py-2.5 bg-teal-600 text-white rounded-full font-semibold hover:bg-teal-700 transition shadow-lg">
+                    Get Started
+                </a>
+            </div>
+
+            <button id="mobile-menu-btn" class="lg:hidden p-2">
+                <div class="w-6 h-5 flex flex-col justify-between">
+                    <span class="menu-line w-full h-0.5 bg-gray-700"></span>
+                    <span class="menu-line w-full h-0.5 bg-gray-700"></span>
+                    <span class="menu-line w-full h-0.5 bg-gray-700"></span>
+                </div>
+            </button>
+        </div>
+    </div>
+    
+    <div id="mobile-menu" class="lg:hidden fixed inset-0 z-30 transform translate-x-full transition-transform duration-500">
+        <div class="absolute inset-0 bg-gradient-to-br from-teal-600 to-gray-900"></div>
+        <div class="relative h-full px-6 pt-24 pb-12 overflow-y-auto">
+            <a href="#home" class="mobile-nav-link block px-6 py-4 text-white text-lg font-bold rounded-xl hover:bg-white/10 transition">
+                Home
+            </a>
+            <a href="#about" class="mobile-nav-link block px-6 py-4 text-white text-lg font-bold rounded-xl hover:bg-white/10 transition">
+                About
+            </a>
+            <a href="#services" class="mobile-nav-link block px-6 py-4 text-white text-lg font-bold rounded-xl hover:bg-white/10 transition">
+                Services
+            </a>
+            <a href="#approach" class="mobile-nav-link block px-6 py-4 text-white text-lg font-bold rounded-xl hover:bg-white/10 transition">
+                Approach
+            </a>
+            <a href="#contact" class="mobile-nav-link block px-6 py-4 mt-4 bg-white text-teal-600 text-lg font-bold rounded-xl text-center">
+                Contact Us
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-teal-50"></div>
+    <div class="absolute inset-0 opacity-5" style="background-image: url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cpath d=\"M0 0h1v60H0zM0 0h60v1H0z\" fill=\"%230d9488\"/%3E%3C/svg%3E');"></div>
+    
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-right">
+                <div class="inline-flex items-center gap-2 px-4 py-2 bg-teal-50 rounded-full mb-6">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-500 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-teal-600"></span>
+                    </span>
+                    <span class="text-sm font-semibold text-teal-700">Kenya's #1 Route-to-Market Partner</span>
+                </div>
+                
+                <h1 class="font-display text-5xl sm:text-6xl lg:text-7xl font-bold mb-6">
+                    <span class="block text-gray-900">Predict.</span>
+                    <span class="block text-gray-900">Execute.</span>
+                    <span class="block bg-gradient-to-r from-teal-600 to-cyan-500 bg-clip-text text-transparent">Win.</span>
+                </h1>
+                
+                <p class="text-xl text-gray-600 mb-8 max-w-xl">
+                    Transform your distribution strategy with Kenya's premier route-to-market agency. We dominate the last mile.
+                </p>
+                
+                <div class="flex flex-wrap gap-4 mb-12">
+                    <a href="#contact" class="px-8 py-4 bg-teal-600 text-white rounded-2xl font-bold shadow-xl hover:bg-teal-700 transition">
+                        Start Your Journey
+                    </a>
+                    <a href="#services" class="px-8 py-4 bg-white border-2 border-gray-300 text-gray-700 rounded-2xl font-bold hover:border-teal-600 transition">
+                        Explore Services
+                    </a>
+                </div>
+                
+                <div class="grid grid-cols-3 gap-6">
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                        <div class="text-4xl font-bold text-teal-600 counter" data-target="35000">0</div>
+                        <div class="text-sm text-gray-600">Outlets</div>
+                    </div>
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                        <div class="text-4xl font-bold text-teal-600 counter" data-target="98">0</div>
+                        <div class="text-sm text-gray-600">Success %</div>
+                    </div>
+                    <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                        <div class="text-4xl font-bold text-teal-600 counter" data-target="47">0</div>
+                        <div class="text-sm text-gray-600">Counties</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="relative" data-aos="fade-left">
+                <div class="relative rounded-3xl overflow-hidden shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80" alt="Distribution" class="w-full h-[500px] object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-br from-teal-600/20 to-cyan-500/20"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div data-aos="fade-right">
+                <div class="inline-flex items-center gap-2 px-4 py-2 bg-teal-50 rounded-full mb-6">
+                    <i class="fas fa-building text-teal-600"></i>
+                    <span class="text-sm font-semibold text-teal-700">About R2M Brands</span>
+                </div>
+                
+                <h2 class="font-display text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+                    Built for the Last Mile
+                </h2>
+                
+                <p class="text-lg text-gray-600 mb-6">
+                    R2M Brands transforms fragmented field operations into precision machines with our <strong class="text-teal-600">Kaizen + DWM system</strong>.
+                </p>
+                
+                <div class="grid sm:grid-cols-2 gap-4 mb-8">
+                    <div class="flex items-start gap-3">
+                        <div class="w-10 h-10 bg-teal-100 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-check text-teal-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Data-Driven</h4>
+                            <p class="text-sm text-gray-600">Real-time insights</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="w-10 h-10 bg-teal-100 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-check text-teal-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Systematic</h4>
+                            <p class="text-sm text-gray-600">Proven frameworks</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="#contact" class="inline-flex items-center gap-2 px-8 py-4 bg-teal-600 text-white rounded-2xl font-bold shadow-lg hover:bg-teal-700 transition">
+                    Partner With Us
+                </a>
+            </div>
+            
+            <div class="relative" data-aos="fade-left">
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="space-y-4">
+                        <img src="https://images.unsplash.com/photo-1556740758-90de374c12ad?w=400&q=80" alt="Team" class="rounded-2xl shadow-xl h-48 w-full object-cover">
+                        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=400&q=80" alt="Field" class="rounded-2xl shadow-xl h-64 w-full object-cover">
+                    </div>
+                    <div class="space-y-4 pt-8">
+                        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&q=80" alt="Strategy" class="rounded-2xl shadow-xl h-64 w-full object-cover">
+                        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=400&q=80" alt="Success" class="rounded-2xl shadow-xl h-48 w-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="py-24 bg-gradient-to-br from-gray-50 to-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="font-display text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+                Complete Route-to-Market Solutions
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                From strategy to execution, we cover every touchpoint
+            </p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl border hover:border-teal-500/50 transition-all transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="0">
+                <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 transition-transform">
+                    <i class="fas fa-route text-white text-2xl"></i>
+                </div>
+                <h3 class="font-display text-2xl font-bold text-gray-900 mb-4 group-hover:text-teal-600 transition">
+                    Last-Mile Distribution
+                </h3>
+                <p class="text-gray-600 mb-6">
+                    Precision execution at 35,000+ outlets with real-time GPS tracking.
+                </p>
+                <a href="#contact" class="inline-flex items-center gap-2 text-teal-600 font-semibold">
+                    Learn More <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            
+            
+            <div class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl border hover:border-teal-500/50 transition-all transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100">
+                <div class="w-16 h-16 bg-gradient-to-br from-cyan-500 to-teal-600 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 transition-transform">
+                    <i class="fas fa-users text-white text-2xl"></i>
+                </div>
+                <h3 class="font-display text-2xl font-bold text-gray-900 mb-4 group-hover:text-teal-600 transition">
+                    Field Force Management
+                </h3>
+                <p class="text-gray-600 mb-6">
+                    Elite teams trained in Kaizen + DWM methodology for systematic excellence.
+                </p>
+                <a href="#contact" class="inline-flex items-center gap-2 text-teal-600 font-semibold">
+                    Learn More <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            
+            
+            <div class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl border hover:border-teal-500/50 transition-all transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
+                <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-teal-600 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 transition-transform">
+                    <i class="fas fa-store text-white text-2xl"></i>
+                </div>
+                <h3 class="font-display text-2xl font-bold text-gray-900 mb-4 group-hover:text-teal-600 transition">
+                    General Trade Excellence
+                </h3>
+                <p class="text-gray-600 mb-6">
+                    Complete GT penetration with perfect store execution and merchandising.
+                </p>
+                <a href="#contact" class="inline-flex items-center gap-2 text-teal-600 font-semibold">
+                    Learn More <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            
+            
+            <div class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl border hover:border-teal-500/50 transition-all transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="300">
+                <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-teal-600 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 transition-transform">
+                    <i class="fas fa-chart-bar text-white text-2xl"></i>
+                </div>
+                <h3 class="font-display text-2xl font-bold text-gray-900 mb-4 group-hover:text-teal-600 transition">
+                    Market Intelligence
+                </h3>
+                <p class="text-gray-600 mb-6">
+                    Real-time data and analytics from 35,000+ daily touchpoints.
+                </p>
+                <a href="#contact" class="inline-flex items-center gap-2 text-teal-600 font-semibold">
+                    Learn More <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            
+            
+            <div class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl border hover:border-teal-500/50 transition-all transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="400">
+                <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-teal-600 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 transition-transform">
+                    <i class="fas fa-bullhorn text-white text-2xl"></i>
+                </div>
+                <h3 class="font-display text-2xl font-bold text-gray-900 mb-4 group-hover:text-teal-600 transition">
+                    Trade Marketing
+                </h3>
+                <p class="text-gray-600 mb-6">
+                    Drive activation campaigns with precision POSM deployment and promotion execution.
+                </p>
+                <a href="#contact" class="inline-flex items-center gap-2 text-teal-600 font-semibold">
+                    Learn More <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            
+            
+            <div class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl border hover:border-teal-500/50 transition-all transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="500">
+                <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-teal-600 rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 transition-transform">
+                    <i class="fas fa-cogs text-white text-2xl"></i>
+                </div>
+                <h3 class="font-display text-2xl font-bold text-gray-900 mb-4 group-hover:text-teal-600 transition">
+                    Operational Excellence
+                </h3>
+                <p class="text-gray-600 mb-6">
+                    Transform operations with proven systems, technology, and Kaizen culture.
+                </p>
+                <a href="#contact" class="inline-flex items-center gap-2 text-teal-600 font-semibold">
+                    Learn More <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!-- Approach Section -->
+<section id="approach" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="font-display text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+                The Kaizen + DWM System
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Continuous improvement meets weekly discipline
+            </p>
+        </div>
+        
+        <div class="grid lg:grid-cols-2 gap-16">
+            <div class="bg-gradient-to-br from-teal-50 to-teal-100/50 rounded-3xl p-12" data-aos="fade-right">
+                <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-lg">
+                    <i class="fas fa-sync-alt text-teal-600 text-2xl"></i>
+                </div>
+                <h3 class="font-display text-3xl font-bold mb-4">Kaizen Philosophy</h3>
+                <p class="text-lg text-gray-700 mb-6">
+                    Continuous improvement isn't a buzzword—it's our operating system
+                </p>
+                <ul class="space-y-4">
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check text-teal-600 mt-1"></i>
+                        <span>Daily reviews and gap analysis</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check text-teal-600 mt-1"></i>
+                        <span>Rapid iteration until perfect</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check text-teal-600 mt-1"></i>
+                        <span>Team-wide improvement culture</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="bg-gradient-to-br from-cyan-50 to-teal-50 rounded-3xl p-12" data-aos="fade-left">
+                <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-lg">
+                    <i class="fas fa-calendar-week text-cyan-600 text-2xl"></i>
+                </div>
+                <h3 class="font-display text-3xl font-bold mb-4">Day-Week-Month</h3>
+                <p class="text-lg text-gray-700 mb-6">
+                    Structured execution at three critical time scales
+                </p>
+                <ul class="space-y-4">
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-sun text-cyan-600 mt-1"></i>
+                        <span><strong>Daily:</strong> Route execution & tracking</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-calendar text-cyan-600 mt-1"></i>
+                        <span><strong>Weekly:</strong> Performance analysis</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-calendar-alt text-cyan-600 mt-1"></i>
+                        <span><strong>Monthly:</strong> Strategic planning</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-24 bg-gradient-to-br from-gray-50 to-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-16">
+            <div data-aos="fade-right">
+                <h2 class="font-display text-4xl font-bold mb-6">Let's Build Your Growth Strategy</h2>
+                <p class="text-xl text-gray-600 mb-12">
+                    Ready to transform your distribution? Let's talk.
+                </p>
+                
+                <div class="space-y-6">
+                    <a href="tel:+254704051777" class="flex items-start gap-4 p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition">
+                        <div class="w-14 h-14 bg-teal-100 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-phone text-teal-600"></i>
+                        </div>
+                        <div>
+                            <div class="font-bold text-lg">+254 704 051 777</div>
+                            <div class="font-bold text-lg">+254 717 736 343</div>
+                        </div>
+                    </a>
+                    
+                    <a href="mailto:info@r2mbrands.com" class="flex items-start gap-4 p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition">
+                        <div class="w-14 h-14 bg-teal-100 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-envelope text-teal-600"></i>
+                        </div>
+                        <div>
+                            <div class="font-bold text-lg">info@r2mbrands.com</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div data-aos="fade-left">
+                <div class="bg-white rounded-3xl p-8 shadow-xl">
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">Full Name *</label>
+                            <input type="text" required class="w-full px-4 py-3 border-2 rounded-xl focus:border-teal-600 outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">Email *</label>
+                            <input type="email" required class="w-full px-4 py-3 border-2 rounded-xl focus:border-teal-600 outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">Message *</label>
+                            <textarea required rows="4" class="w-full px-4 py-3 border-2 rounded-xl focus:border-teal-600 outline-none"></textarea>
+                        </div>
+                        <button type="submit" class="w-full px-8 py-4 bg-teal-600 text-white rounded-2xl font-bold shadow-lg hover:bg-teal-700 transition">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-4 gap-12 mb-12">
+            <div>
+                <img src="logo.png" alt="R2M Brands" class="h-12 mb-4 brightness-0 invert">
+                <p class="text-white/70">Kenya's premier route-to-market agency</p>
+            </div>
+            <div>
+                <h3 class="font-bold text-lg mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="#home" class="text-white/70 hover:text-white">Home</a></li>
+                    <li><a href="#about" class="text-white/70 hover:text-white">About</a></li>
+                    <li><a href="#services" class="text-white/70 hover:text-white">Services</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-lg mb-4">Services</h3>
+                <ul class="space-y-2">
+                    <li><a href="#services" class="text-white/70 hover:text-white">Last-Mile Distribution</a></li>
+                    <li><a href="#services" class="text-white/70 hover:text-white">Field Force Management</a></li>
+                    <li><a href="#services" class="text-white/70 hover:text-white">General Trade</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-lg mb-4">Contact</h3>
+                <ul class="space-y-2 text-white/70">
+                    <li>+254 704 051 777</li>
+                    <li>info@r2mbrands.com</li>
+                    <li>Nairobi, Kenya</li>
+                </ul>
+            </div>
+        </div>
+        <div class="pt-8 border-t border-white/10 text-center text-white/60">
+            © 2026 R2M Brands Limited. All rights reserved. | Predict. Execute. Win.
+        </div>
+    </div>
+</footer>
+
+<button id="back-to-top" class="fixed bottom-8 right-8 w-14 h-14 bg-teal-600 text-white rounded-full shadow-2xl opacity-0 invisible transition-all hover:bg-teal-700">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script-enhanced.js"></script>
+</body>
+</html>
