@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Last-Mile Distribution | R2M Brands</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        mono: ['Space Mono', 'monospace'],
+                    },
+                    colors: {
+                        brand: { 
+                            teal: '#0d9488', 
+                            dark: '#0a0e27', 
+                            accent: '#0f766e',
+                            cyan: '#06b6d4',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-white text-slate-900">
+
+    <!-- Navbar -->
+    <nav class="bg-white border-b sticky top-0 z-50 shadow-sm" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="w-12 h-12 bg-brand-teal rounded-xl flex items-center justify-center text-white font-bold text-lg shadow-lg group-hover:shadow-brand-teal/50 transition-all duration-300 group-hover:scale-110">
+                    R2M
+                </div>
+                <span class="font-bold text-2xl tracking-tight text-gray-900 uppercase">
+                    R2M <span class="text-brand-teal">BRANDS</span>
+                </span>
+            </a>
+            <a href="index.html#services" class="text-sm font-semibold text-brand-teal hover:text-brand-accent transition-colors flex items-center gap-2 group">
+                <i class="fas fa-arrow-left group-hover:-translate-x-1 transition-transform"></i> 
+                Back to All Services
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative py-24 overflow-hidden bg-gradient-to-br from-brand-dark via-gray-900 to-brand-dark">
+        <div class="absolute inset-0 opacity-20">
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=2000" 
+                 class="w-full h-full object-cover" alt="Logistics">
+        </div>
+        
+        <div class="absolute inset-0 opacity-30">
+            <div class="absolute top-20 right-20 w-96 h-96 bg-brand-teal rounded-full blur-3xl animate-float"></div>
+            <div class="absolute bottom-20 left-20 w-96 h-96 bg-brand-cyan rounded-full blur-3xl animate-float" style="animation-delay: 3s;"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6 relative z-10 text-center lg:text-left">
+            <div class="inline-block px-4 py-2 bg-brand-teal/20 border border-brand-teal/30 rounded-full text-brand-teal font-bold text-xs uppercase tracking-widest mb-6 backdrop-blur-sm">
+                <i class="fas fa-award mr-2"></i>
+                Service Excellence
+            </div>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-tight">
+                Last-Mile Distribution & <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-brand-cyan">
+                    General Trade Domination
+                </span>
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-300 max-w-3xl leading-relaxed">
+                We specialize in winning where <strong class="text-brand-teal">70% of Kenyan FMCG sales happen</strong>—the 
+                fragmented General Trade and Informal Retail channels.
+            </p>
+        </div>
+    </header>
+
+    <!-- The Challenge & Solution -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Challenge -->
+                <div class="reveal-on-scroll">
+                    <div class="inline-block px-4 py-1 bg-red-100 text-red-600 rounded-full text-xs font-bold uppercase mb-6">
+                        The Challenge
+                    </div>
+                    <h2 class="text-4xl font-black mb-6 text-gray-900">
+                        The <span class="text-red-600 italic">Distribution Gap</span>
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        In Kenya, over <strong class="text-brand-teal">70% of FMCG sales</strong> take place in "Dukas," 
+                        yet most strategies are designed for Modern Trade. Without a disciplined last-mile model, 
+                        brands lose visibility and suffer from inconsistent availability.
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4 p-5 bg-red-50 rounded-xl border-l-4 border-red-500 transform hover:scale-105 transition-transform cursor-pointer group">
+                            <i class="fas fa-eye-slash text-red-500 text-2xl mt-1 group-hover:scale-110 transition-transform"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-2">Fragile Visibility</h4>
+                                <p class="text-sm text-gray-600">
+                                    Products disappear from sight once they leave the distributor, 
+                                    creating blind spots in your distribution network.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4 p-5 bg-orange-50 rounded-xl border-l-4 border-orange-500 transform hover:scale-105 transition-transform cursor-pointer group">
+                            <i class="fas fa-money-bill-wave text-orange-500 text-2xl mt-1 group-hover:scale-110 transition-transform"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-2">Wasted Trade Spend</h4>
+                                <p class="text-sm text-gray-600">
+                                    Inefficient use of trade spend due to intuition-led planning 
+                                    instead of data-driven decisions.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4 p-5 bg-amber-50 rounded-xl border-l-4 border-amber-500 transform hover:scale-105 transition-transform cursor-pointer group">
+                            <i class="fas fa-exclamation-triangle text-amber-500 text-2xl mt-1 group-hover:scale-110 transition-transform"></i>
+                            <div>
+                                <h4 class="font-bold text-gray-900 mb-2">Inconsistent Availability</h4>
+                                <p class="text-sm text-gray-600">
+                                    Stock-outs and poor shelf presence leading to lost sales 
+                                    and weakened brand equity.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Solution -->
+                <div class="reveal-on-scroll bg-gradient-to-br from-brand-teal to-brand-cyan p-10 md:p-12 rounded-3xl text-white shadow-2xl" style="animation-delay: 0.2s;">
+                    <div class="inline-block px-4 py-1 bg-white/20 rounded-full text-xs font-bold uppercase mb-6 backdrop-blur-sm">
+                        <i class="fas fa-lightbulb mr-2"></i>
+                        The R2M Solution
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-black mb-8">Our Three-Pillar Strategy</h2>
+                    
+                    <div class="space-y-8">
+                        <div class="flex gap-5 group cursor-pointer">
+                            <div class="flex-shrink-0 w-14 h-14 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center font-black text-2xl group-hover:scale-110 transition-transform">
+                                1
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Predictive Route Mapping</h4>
+                                <p class="text-teal-100 leading-relaxed">
+                                    Tightly mapped daily routes ensure consistent duka coverage and 
+                                    high-frequency engagement with precision targeting.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-5 group cursor-pointer">
+                            <div class="flex-shrink-0 w-14 h-14 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center font-black text-2xl group-hover:scale-110 transition-transform">
+                                2
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Market Storm Campaigns</h4>
+                                <p class="text-teal-100 leading-relaxed">
+                                    Rapid saturation of targeted zones within 48–72 hours for 
+                                    immediate visibility and sales momentum.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-5 group cursor-pointer">
+                            <div class="flex-shrink-0 w-14 h-14 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center font-black text-2xl group-hover:scale-110 transition-transform">
+                                3
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Smart M-PESA Collections</h4>
+                                <p class="text-teal-100 leading-relaxed">
+                                    Digital payment integration to accelerate cash cycles and 
+                                    reduce friction for retailers.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-10 pt-8 border-t border-white/20">
+                        <div class="grid grid-cols-3 gap-6 text-center">
+                            <div>
+                                <div class="text-3xl font-black mb-1">94%</div>
+                                <div class="text-xs text-teal-100 uppercase">Coverage Rate</div>
+                            </div>
+                            <div>
+                                <div class="text-3xl font-black mb-1">48h</div>
+                                <div class="text-xs text-teal-100 uppercase">Market Storm</div>
+                            </div>
+                            <div>
+                                <div class="text-3xl font-black mb-1">99%</div>
+                                <div class="text-xs text-teal-100 uppercase">Collection Rate</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kaizen + DWM System -->
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 reveal-on-scroll">
+                <div class="inline-block px-4 py-1 bg-brand-teal/10 text-brand-teal rounded-full text-xs font-bold uppercase mb-6">
+                    Our Methodology
+                </div>
+                <h2 class="text-4xl md:text-5xl font-black mb-6">
+                    Driven by the <span class="text-brand-teal italic">Kaizen + DWM</span> System
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Continuous improvement through our Daily-Weekly-Monthly operating cadence
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Daily -->
+                <div class="reveal-on-scroll bg-white rounded-2xl p-8 shadow-lg border-2 border-transparent hover:border-brand-teal transition-all group cursor-pointer">
+                    <div class="text-center mb-6">
+                        <div class="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-brand-teal to-brand-cyan rounded-2xl mb-4 group-hover:scale-110 transition-transform">
+                            <i class="fas fa-clock text-3xl text-white"></i>
+                        </div>
+                        <div class="text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-brand-cyan mb-2 font-mono">
+                            DAILY
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-xl mb-4 text-brand-dark text-center">Real-Time Correction</h3>
+                    <p class="text-gray-600 text-center leading-relaxed mb-6">
+                        Execution issues are identified early and corrected immediately to prevent sales leakage 
+                        and maintain optimal performance.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-brand-teal"></i>
+                            <span>GPS-tracked outlet visits</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-brand-teal"></i>
+                            <span>Live data capture & reporting</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-brand-teal"></i>
+                            <span>Immediate issue escalation</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Weekly -->
+                <div class="reveal-on-scroll bg-white rounded-2xl p-8 shadow-lg border-2 border-transparent hover:border-brand-teal transition-all transform md:-translate-y-4 group cursor-pointer" style="animation-delay: 0.1s;">
+                    <div class="text-center mb-6">
+                        <div class="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-brand-teal to-brand-cyan rounded-2xl mb-4 group-hover:scale-110 transition-transform">
+                            <i class="fas fa-chart-line text-3xl text-white"></i>
+                        </div>
+                        <div class="text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-brand-cyan mb-2 font-mono">
+                            WEEKLY
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-xl mb-4 text-brand-dark text-center">Route Optimization</h3>
+                    <p class="text-gray-600 text-center leading-relaxed mb-6">
+                        Reviewing coverage and conversion metrics to optimize routes, messaging, 
+                        and resource allocation for maximum impact.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-brand-teal"></i>
+                            <span>Coverage & conversion analysis</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-brand-teal"></i>
+                            <span>Route efficiency assessment</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-brand-teal"></i>
+                            <span>Resource reallocation</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Monthly -->
+                <div class="reveal-on-scroll bg-white rounded-2xl p-8 shadow-lg border-2 border-transparent hover:border-brand-teal transition-all group cursor-pointer" style="animation-delay: 0.2s;">
+                    <div class="text-center mb-6">
+                        <div class="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-brand-teal to-brand-cyan rounded-2xl mb-4 group-hover:scale-110 transition-transform">
+                            <i class="fas fa-sync-alt text-3xl text-white"></i>
+                        </div>
+                        <div class="text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-brand-teal to-brand-cyan mb-2 font-mono">
+                            MONTHLY
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-xl mb-4 text-brand-dark text-center">ROI Analysis</h3>
+                    <p class="text-gray-600 text-center leading-relaxed mb-6">
+                        Structured recalibration to ensure market investments deliver measurable 
+                        commercial impact and strategic value.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-brand-teal"></i>
+                            <span>Comprehensive ROI reporting</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-brand-teal"></i>
+                            <span>Strategic planning sessions</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-brand-teal"></i>
+                            <span>Investment recalibration</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Platform -->
+    <section class="py-24 bg-brand-dark relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-brand-teal rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 left-0 w-96 h-96 bg-brand-cyan rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="text-white reveal-on-scroll">
+                    <div class="inline-block px-4 py-1 bg-brand-teal/20 border border-brand-teal/30 rounded-full text-brand-teal text-xs font-bold uppercase mb-6 backdrop-blur-sm">
+                        <i class="fas fa-microchip mr-2"></i>
+                        Technology Platform
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-black mb-6">
+                        <span class="text-brand-teal italic">Technology-Enabled</span> Visibility
+                    </h2>
+                    <p class="text-slate-300 mb-8 text-lg leading-relaxed">
+                        Our model replaces guesswork with predictability. Through GPS-verified outlet visits 
+                        and live data capture, we eliminate market "blind spots" and provide complete transparency.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border-l-4 border-brand-teal group hover:bg-white/20 transition-all cursor-pointer">
+                            <div class="text-3xl font-black mb-2 text-brand-teal">OSA</div>
+                            <div class="text-xs text-slate-400 uppercase tracking-wide">On-Shelf Availability Tracking</div>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border-l-4 border-brand-cyan group hover:bg-white/20 transition-all cursor-pointer">
+                            <div class="text-3xl font-black mb-2 text-brand-cyan">SOS</div>
+                            <div class="text-xs text-slate-400 uppercase tracking-wide">Share of Shelf Monitoring</div>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border-l-4 border-brand-teal group hover:bg-white/20 transition-all cursor-pointer">
+                            <div class="text-3xl font-black mb-2 text-brand-teal">GPS</div>
+                            <div class="text-xs text-slate-400 uppercase tracking-wide">Route Verification</div>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border-l-4 border-brand-cyan group hover:bg-white/20 transition-all cursor-pointer">
+                            <div class="text-3xl font-black mb-2 text-brand-cyan">M-PESA</div>
+                            <div class="text-xs text-slate-400 uppercase tracking-wide">Digital Collections</div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4 p-6 bg-brand-teal/20 backdrop-blur-sm rounded-xl border border-brand-teal/30">
+                        <i class="fas fa-shield-alt text-4xl text-brand-teal"></i>
+                        <div>
+                            <h4 class="font-bold text-lg mb-1">100% Data Accuracy</h4>
+                            <p class="text-sm text-slate-400">Real-time validation and verification systems</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reveal-on-scroll" style="animation-delay: 0.2s;">
+                    <div class="bg-gray-900 rounded-3xl p-8 shadow-2xl border border-gray-800">
+                        <!-- Dashboard Mockup -->
+                        <div class="flex items-center gap-2 mb-6">
+                            <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                            <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                            <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                            <div class="flex-1 text-center text-xs text-gray-500 font-mono">R2M Analytics Dashboard</div>
+                        </div>
+                        
+                        <div class="space-y-6">
+                            <!-- Header Stats -->
+                            <div class="grid grid-cols-3 gap-4">
+                                <div class="bg-gray-800 rounded-xl p-4 hover:bg-gray-750 transition-colors">
+                                    <div class="text-xs text-gray-400 mb-2">Daily Coverage</div>
+                                    <div class="text-2xl font-black text-brand-teal">94<span class="text-base">%</span></div>
+                                </div>
+                                <div class="bg-gray-800 rounded-xl p-4 hover:bg-gray-750 transition-colors">
+                                    <div class="text-xs text-gray-400 mb-2">Availability</div>
+                                    <div class="text-2xl font-black text-brand-teal">87<span class="text-base">%</span></div>
+                                </div>
+                                <div class="bg-gray-800 rounded-xl p-4 hover:bg-gray-750 transition-colors">
+                                    <div class="text-xs text-gray-400 mb-2">Conversion</div>
+                                    <div class="text-2xl font-black text-brand-teal">76<span class="text-base">%</span></div>
+                                </div>
+                            </div>
+
+                            <!-- Chart -->
+                            <div class="bg-gray-800 rounded-xl p-6">
+                                <div class="text-sm text-gray-400 mb-4 flex items-center justify-between">
+                                    <span>Weekly Performance</span>
+                                    <span class="text-xs text-brand-teal">↑ 12%</span>
+                                </div>
+                                <div class="flex items-end gap-2 h-40">
+                                    <div class="flex-1 bg-gradient-to-t from-brand-teal to-brand-cyan rounded-t transition-all hover:opacity-80 cursor-pointer" style="height: 45%;"></div>
+                                    <div class="flex-1 bg-gradient-to-t from-brand-teal to-brand-cyan rounded-t transition-all hover:opacity-80 cursor-pointer" style="height: 68%;"></div>
+                                    <div class="flex-1 bg-gradient-to-t from-brand-teal to-brand-cyan rounded-t transition-all hover:opacity-80 cursor-pointer" style="height: 58%;"></div>
+                                    <div class="flex-1 bg-gradient-to-t from-brand-teal to-brand-cyan rounded-t transition-all hover:opacity-80 cursor-pointer" style="height: 88%;"></div>
+                                    <div class="flex-1 bg-gradient-to-t from-brand-teal to-brand-cyan rounded-t transition-all hover:opacity-80 cursor-pointer" style="height: 92%;"></div>
+                                    <div class="flex-1 bg-gradient-to-t from-brand-teal to-brand-cyan rounded-t transition-all hover:opacity-80 cursor-pointer" style="height: 78%;"></div>
+                                    <div class="flex-1 bg-gradient-to-t from-brand-teal to-brand-cyan rounded-t transition-all hover:opacity-80 cursor-pointer" style="height: 95%;"></div>
+                                </div>
+                                <div class="grid grid-cols-7 gap-2 mt-2 text-xs text-gray-500 text-center">
+                                    <span>Mon</span>
+                                    <span>Tue</span>
+                                    <span>Wed</span>
+                                    <span>Thu</span>
+                                    <span>Fri</span>
+                                    <span>Sat</span>
+                                    <span>Sun</span>
+                                </div>
+                            </div>
+
+                            <!-- Activity Feed -->
+                            <div class="bg-gray-800 rounded-xl p-6">
+                                <div class="text-sm text-gray-400 mb-4">Live Activity Feed</div>
+                                <div class="space-y-3">
+                                    <div class="flex items-center gap-3 text-sm">
+                                        <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                                        <span class="text-gray-300">245 outlets visited today</span>
+                                        <span class="ml-auto text-xs text-gray-500">2m ago</span>
+                                    </div>
+                                    <div class="flex items-center gap-3 text-sm">
+                                        <div class="w-2 h-2 bg-brand-teal rounded-full"></div>
+                                        <span class="text-gray-300">32 new SKU placements</span>
+                                        <span class="ml-auto text-xs text-gray-500">15m ago</span>
+                                    </div>
+                                    <div class="flex items-center gap-3 text-sm">
+                                        <div class="w-2 h-2 bg-brand-cyan rounded-full"></div>
+                                        <span class="text-gray-300">KES 2.4M collected via M-PESA</span>
+                                        <span class="ml-auto text-xs text-gray-500">1h ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results & Impact -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 reveal-on-scroll">
+                <div class="inline-block px-4 py-1 bg-green-100 text-green-600 rounded-full text-xs font-bold uppercase mb-6">
+                    <i class="fas fa-trophy mr-2"></i>
+                    Proven Results
+                </div>
+                <h2 class="text-4xl md:text-5xl font-black mb-6">
+                    Measurable <span class="text-brand-teal">Impact</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    We don't measure success by outlet visits alone—we measure it by conversion, 
+                    availability, and commercial impact.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="reveal-on-scroll text-center p-8 bg-gradient-to-br from-gray-50 to-white rounded-2xl border border-gray-100 hover:shadow-xl transition-all group cursor-pointer">
+                    <div class="w-20 h-20 bg-gradient-to-br from-brand-teal to-brand-cyan rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-percentage text-3xl text-white"></i>
+                    </div>
+                    <div class="text-5xl font-black text-brand-teal mb-2">+45%</div>
+                    <div class="text-sm text-gray-600 uppercase tracking-wide">Coverage Increase</div>
+                </div>
+
+                <div class="reveal-on-scroll text-center p-8 bg-gradient-to-br from-gray-50 to-white rounded-2xl border border-gray-100 hover:shadow-xl transition-all group cursor-pointer" style="animation-delay: 0.1s;">
+                    <div class="w-20 h-20 bg-gradient-to-br from-brand-teal to-brand-cyan rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-chart-line text-3xl text-white"></i>
+                    </div>
+                    <div class="text-5xl font-black text-brand-teal mb-2">+28%</div>
+                    <div class="text-sm text-gray-600 uppercase tracking-wide">Availability Boost</div>
+                </div>
+
+                <div class="reveal-on-scroll text-center p-8 bg-gradient-to-br from-gray-50 to-white rounded-2xl border border-gray-100 hover:shadow-xl transition-all group cursor-pointer" style="animation-delay: 0.2s;">
+                    <div class="w-20 h-20 bg-gradient-to-br from-brand-teal to-brand-cyan rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-bolt text-3xl text-white"></i>
+                    </div>
+                    <div class="text-5xl font-black text-brand-teal mb-2">72h</div>
+                    <div class="text-sm text-gray-600 uppercase tracking-wide">Market Storm Speed</div>
+                </div>
+
+                <div class="reveal-on-scroll text-center p-8 bg-gradient-to-br from-gray-50 to-white rounded-2xl border border-gray-100 hover:shadow-xl transition-all group cursor-pointer" style="animation-delay: 0.3s;">
+                    <div class="w-20 h-20 bg-gradient-to-br from-brand-teal to-brand-cyan rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-mobile-alt text-3xl text-white"></i>
+                    </div>
+                    <div class="text-5xl font-black text-brand-teal mb-2">99%</div>
+                    <div class="text-sm text-gray-600 uppercase tracking-wide">Digital Collection Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 bg-gradient-to-br from-brand-dark via-gray-900 to-brand-dark text-white text-center relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-brand-teal rounded-full blur-3xl animate-float"></div>
+            <div class="absolute bottom-0 left-0 w-96 h-96 bg-brand-cyan rounded-full blur-3xl animate-float" style="animation-delay: 3s;"></div>
+        </div>
+
+        <div class="max-w-4xl mx-auto px-6 relative z-10 reveal-on-scroll">
+            <h2 class="text-4xl md:text-5xl font-black mb-6">
+                Ready to Dominate the <span class="text-brand-teal">Last-Mile</span>?
+            </h2>
+            <p class="text-xl text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+                We don't measure success by outlet visits alone; we measure it by conversion and product availability. 
+                Let's transform your distribution strategy.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <a href="mailto:info@r2mbrands.com" 
+                   class="group px-10 py-5 bg-brand-teal hover:bg-brand-accent text-white font-bold rounded-xl shadow-2xl transition-all transform hover:scale-105 flex items-center justify-center gap-3">
+                    <i class="fas fa-file-alt"></i>
+                    Request Performance Audit
+                    <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                </a>
+                <a href="tel:+254704051777" 
+                   class="px-10 py-5 border-2 border-white/30 text-white font-bold rounded-xl hover:bg-white/10 transition-all flex items-center justify-center gap-3 backdrop-blur-sm">
+                    <i class="fas fa-phone text-brand-teal"></i>
+                    +254 704 051 777
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-200 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <!-- Company Info -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 bg-brand-teal rounded-xl flex items-center justify-center text-white font-bold text-lg">
+                            R2M
+                        </div>
+                        <span class="font-bold text-2xl tracking-tight text-gray-900 uppercase">
+                            R2M <span class="text-brand-teal">BRANDS</span>
+                        </span>
+                    </div>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Connecting brands to the market through data-driven last-mile distribution and field execution excellence.
+                    </p>
+                    <div class="flex gap-3">
+                        <a href="#" class="w-10 h-10 bg-gray-100 hover:bg-brand-teal rounded-full flex items-center justify-center transition-all group">
+                            <i class="fab fa-linkedin text-gray-600 group-hover:text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-100 hover:bg-brand-teal rounded-full flex items-center justify-center transition-all group">
+                            <i class="fab fa-facebook text-gray-600 group-hover:text-white"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-100 hover:bg-brand-teal rounded-full flex items-center justify-center transition-all group">
+                            <i class="fab fa-instagram text-gray-600 group-hover:text-white"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-bold text-gray-900 mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-600 text-sm">
+                        <li><a href="index.html#services" class="hover:text-brand-teal transition-colors">Last-Mile Distribution</a></li>
+                        <li><a href="index.html#services" class="hover:text-brand-teal transition-colors">Market Intelligence</a></li>
+                        <li><a href="index.html#services" class="hover:text-brand-teal transition-colors">Brand Activation</a></li>
+                        <li><a href="index.html#services" class="hover:text-brand-teal transition-colors">Retail Audits</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-bold text-gray-900 mb-4">Contact</h4>
+                    <ul class="space-y-3 text-gray-600 text-sm">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-phone text-brand-teal"></i>
+                            <a href="tel:+254704051777" class="hover:text-brand-teal transition-colors">+254 704 051 777</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-envelope text-brand-teal"></i>
+                            <a href="mailto:info@r2mbrands.com" class="hover:text-brand-teal transition-colors">info@r2mbrands.com</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-map-marker-alt text-brand-teal"></i>
+                            <span>Nairobi, Kenya</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
+                <p>&copy; 2024 R2M Brands Limited. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-brand-teal transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-brand-teal transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-14 h-14 bg-brand-teal hover:bg-brand-accent text-white rounded-full shadow-lg opacity-0 invisible transition-all transform hover:scale-110 flex items-center justify-center z-40">
+        <i class="fas fa-arrow-up text-xl"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
