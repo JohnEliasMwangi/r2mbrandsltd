@@ -1,0 +1,14 @@
+{
+  "name": "r2m-brands-sales-marketing",
+  "version": "2.0.0",
+  "description": "R2M Brands - Sales & Marketing, Instore Promotions, Merchandising, Foot Soldiers, Wholesale & Retail Distribution. Connecting manufacturers to suppliers and end users across Kenya.",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Static site - no build step required for Vercel'",
+    "preview": "npx serve ."
+  },
+  "keywords": ["sales", "marketing", "instore promotion", "merchandising", "foot soldiers", "distribution", "Kenya", "FMCG", "wholesale", "retail"],
+  "author": "R2M Brands Ltd",
+  "license": "UNLICENSED"
+}
