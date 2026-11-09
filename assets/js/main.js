@@ -124,3 +124,40 @@ if(form){
 $$('img[loading="lazy"]').forEach(img=>{
   img.addEventListener('load', ()=> img.classList.add('loaded'));
 });
+
+// Interlink with the R2M apps: portal links plus live figures from the shared store.
+// Set <meta name="r2m-api" content="https://apps.example.com"> when the site is hosted
+// apart from the apps; empty means look for the R2M server on this origin.
+const appMeta = $('meta[name="r2m-api"]');
+const appBase = (appMeta?.content || '').trim().replace(/\/+$/,'');
+
+function interlink(base){
+  $$('[data-portal]').forEach(a=>{ a.href = base + '/portal'; });
+
+  const live = $('#live-network');
+  if(!live) return;
+  fetch(base + '/api/public/site', {headers:{'accept':'application/json'}})
+    .then(r=> r.ok ? r.json() : Promise.reject(new Error('HTTP '+r.status)))
+    .then(data=>{
+      const n = data.network || {};
+      $$('[data-live]', live).forEach(el=>{
+        const v = n[el.dataset.live];
+        if(typeof v === 'number') el.textContent = v.toLocaleString();
+      });
+      const stamp = $('#live-stamp');
+      if(stamp && data.generatedAt){
+        stamp.textContent = 'Updated ' + new Date(data.generatedAt).toLocaleString([], {dateStyle:'medium', timeStyle:'short'});
+      }
+      live.hidden = false;
+    })
+    .catch(()=>{});
+}
+
+if(appBase){
+  interlink(appBase);
+} else if(/^https?:$/.test(location.protocol)){
+  fetch('/api/health', {headers:{'accept':'application/json'}})
+    .then(r=> r.ok ? r.json() : Promise.reject(new Error('HTTP '+r.status)))
+    .then(data=>{ if(data?.service === 'r2m-server') interlink(''); })
+    .catch(()=>{});
+}

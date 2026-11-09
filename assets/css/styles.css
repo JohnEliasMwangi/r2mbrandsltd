@@ -439,3 +439,7 @@ footer{margin-top:60px;background:#0f1f1d;color:#c8d9d6}
   }
   :is(.neon-wrapper,.glow-wrap)::after{ opacity:.6; }
 }
+
+/* Live figures from the R2M apps */
+#live-network[hidden]{ display:none !important; }
+.live-stamp{ text-align:center; margin-top:18px; font-size:.78rem; font-weight:600; color:var(--ink-2) }
